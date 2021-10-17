@@ -1,4 +1,5 @@
 function calcul(prixTotal, argentClient){
+    // On définjt le système monétaire
     var euros = {
         c1: 0.01,
         c2: 0.02,
@@ -15,6 +16,7 @@ function calcul(prixTotal, argentClient){
         b100: 100,
         b200: 200
     }
+    // On définit le nombre de pièces de chaque sorte contenues dans la caisse
     var caisse = {
         c1: 10,
         c2: 2,
@@ -31,15 +33,11 @@ function calcul(prixTotal, argentClient){
         b100: 5,
         b200: 2
     }
-    var diff = argentClient - prixTotal;
+    var diff = argentClient - prixTotal
 
-    for( items in euros){
-        if(euros[items] < diff ){
-            console.log(items)
-        }
-    }
    
 
+    // On retourne le rendu par le commerçant
     var rendu = {
         c1: 0,
         c2: 0,
