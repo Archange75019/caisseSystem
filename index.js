@@ -59,7 +59,7 @@ function calcul(prixTotal, argentClient){
         b200: 0
     }
 
-    if (count == rendu){
+    if (count == diff){
         return  rendu
     }
    
