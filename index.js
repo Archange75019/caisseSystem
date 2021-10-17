@@ -33,7 +33,11 @@ function calcul(prixTotal, argentClient){
         b100: 5,
         b200: 2
     }
-    var diff = argentClient - prixTotal
+    var diff = argentClient - prixTotal;
+
+    var count = 0;
+
+    var resu = verifMonnaie ()
 
    
 
@@ -54,6 +58,10 @@ function calcul(prixTotal, argentClient){
         b100: 0,
         b200: 0
     }
-    return  rendu
+
+    if (count == rendu){
+        return  rendu
+    }
+   
 }
 calcul(57.32, 100)
